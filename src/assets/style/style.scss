@@ -1,0 +1,85 @@
+@import 'variables.scss';
+body{
+    font-family: Nunito Sans;
+    //header
+    header{
+        background-color: transparent !important;
+        z-index: 1 !important;
+        position: relative;
+        box-shadow: none !important;
+        &.onScroll {
+            background-color: black !important; 
+        }
+        h1{
+          color:$first-color;
+          i{
+            margin-bottom: 10px;
+          }
+        }
+        .nav-list{        
+            .nav-btn{
+                background-color: transparent !important;
+                color: white;
+                &:active , &:hover{
+                  color: $first-color;
+                }
+            } 
+            
+        }
+        .nav-menu{
+          display: none;
+        }
+        @media screen and (max-width: 760px) {
+          .v-toolbar__content, .v-toolbar__extension {
+              display: block !important;
+              width: 100%;
+              background-color: black;
+              height: auto !important;
+            }
+            .nav-menu{
+              background-color: black !important;
+              color: white !important;
+              float: right;
+              top: -35px;
+              display: block;
+            }
+    
+          }
+    
+    }
+
+    //home
+    .bg-hero{
+        background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url("../img/bg-hero.jpg");
+        background-position: center center;
+        padding-top: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -64px;
+        z-index: 0;    
+        h1{
+            color:white;
+            font-size: 4rem;
+            padding: 5% 1%;        
+        }
+        img{
+            width: 100%;
+            animation: loader 50s infinite;
+        }
+        @keyframes loader {
+            0% {
+              rotate: 0deg;
+            }
+            100% {
+              rotate: 360deg;
+            }
+          }
+          
+    
+    }
+    
+}
