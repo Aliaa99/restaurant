@@ -18,11 +18,12 @@
       <v-btn   class="nav-menu" @click="tooo"> <v-icon>mdi-view-list</v-icon></v-btn>
     <!-- nav list  -->
     
-        <div v-for='item in items' :key='item.id'  class="nav-list"   >
-          <v-menu open-on-hover  >
+        <div   class="nav-list"  v-if="this.X" >
+          <v-menu  v-for='item in items' :key='item.id'>
             <template v-slot:activator="{ on }" >
                 <v-btn class="nav-btn"
                   v-on="on" 
+                  
                 > 
                   {{item.name}}
                   <v-icon>{{item.icon}}</v-icon>
@@ -31,13 +32,15 @@
             <v-list v-for='element in item.value ' :key='element.id' >
               <v-list-item>
                 <v-list-item-title v-if="item.type = Array"> 
-                  <v-btn>{{ element.ex }}</v-btn>
+                  <v-btn class="small-list" >{{ element.ex }}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
         </div>
-
+        <div>
+          <v-btn class="general-btn"> book a table </v-btn>
+        </div>
     </v-app-bar>
     <v-main>
       <router-view/>
@@ -59,17 +62,17 @@ export default {
     {name:'pages',value:[
       {ex:'booking'},
       {ex:'our-team'},
-      {ex:'testimonial'}],type:'Array',icon:'mdi-menu-down'}
-      
+      {ex:'testimonial'}],type:'Array',icon:'mdi-menu-down'},
+      {name:'contact',value:'',type:'text',icon:''},
     ],
 
     view: {
         topOfPage: true
       },
-    
-      X:false
+      X: true,
 
     }),
+    
   
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
@@ -88,7 +91,7 @@ export default {
       console.log(this.X)
     }
   }
-  
+
 };
 
 </script>

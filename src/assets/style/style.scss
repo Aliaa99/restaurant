@@ -23,12 +23,12 @@ body{
                 &:active , &:hover{
                   color: $first-color;
                 }
-            } 
-            
+            }             
         }
         .nav-menu{
           display: none;
         }
+
         @media screen and (max-width: 760px) {
           .v-toolbar__content, .v-toolbar__extension {
               display: block !important;
@@ -43,11 +43,28 @@ body{
               top: -35px;
               display: block;
             }
+            .nav-btn{
+              display: block;
+            }
+
     
           }
-    
+  
+          
     }
-
+    .v-menu__content{
+      top: 7% !important;
+      .v-list-item{
+          min-height: 25px;
+          .small-list{
+            font-size: 12px !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            padding: 0px !important;
+            height: 25px !important;
+          }
+      }
+    }
     //home
     .bg-hero{
         background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url("../img/bg-hero.jpg");
@@ -81,5 +98,19 @@ body{
           
     
     }
-    
+ 
+    //options card
+    .options{
+      padding: 1.5rem;
+      max-height: 15 rem;
+      .options-icon{
+        color: $first-color;
+        font-size: 4rem;
+      }
+      .options-text{
+        padding: 5px 0px;
+        margin: 0px 10px;
+        
+      }
+    }
 }

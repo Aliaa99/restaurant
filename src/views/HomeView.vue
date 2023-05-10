@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="bg-hero">
         <v-container>
            <v-row cols="6">
@@ -19,11 +19,17 @@
            </v-row>
         </v-container>
     </div>
+    
+</template> -->
+
+<template>
+   <options />
 </template>
 <script>
-    export default {
-    name: 'Home',
-
+import Options from '@/components/Options.vue'
+   export default {
+  components: { Options },
+     name: 'Home',
 
     }
 </script>
