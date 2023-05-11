@@ -1,11 +1,15 @@
 @import 'variables.scss';
 body{
     font-family: Nunito Sans;
+    .v-main{
+      padding: 0px !important;
+    }
     //header
     header{
         background-color: transparent !important;
         z-index: 1 !important;
-        position: relative;
+        position: absolute;
+        top:0px;
         box-shadow: none !important;
         &.onScroll {
             background-color: black !important; 
@@ -69,14 +73,14 @@ body{
     .bg-hero{
         background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url("../img/bg-hero.jpg");
         background-position: center center;
-        padding-top: 5%;
+        padding: 5rem 1rem;
         background-repeat: no-repeat;
         background-size: cover;
         color:white;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -64px;
+        // position: absolute;
+        // left: 0;
+        // right: 0;
+        // top: -64px;
         z-index: 0;    
         h1{
             color:white;
@@ -107,10 +111,69 @@ body{
         color: $first-color;
         font-size: 4rem;
       }
+      .options-h{
+        margin: 5px 10px;
+      }
       .options-text{
         padding: 5px 0px;
         margin: 0px 10px;
         
       }
+    }
+
+    //about us
+    .about-text{
+        h5{
+          color: $first-color;
+          font-family: 'Pacifico'!important;
+          font-size: 23px;
+          font-weight: lighter;
+          position: relative;
+          &::after{
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 2px;
+            top: 50%;
+            left: 20%;
+            background:$first-color;
+          }
+        }
+        .h1-welcome{
+            font-family: "Nunito", sans-serif;
+            font-size: 35px;
+            margin-bottom: 10px;
+            .v-icon{
+              color: $first-color;
+              font-size: 2.5rem;
+            }
+          }
+        .h1-num{
+          display: inline-block;
+          color: $first-color;
+          font-size: 3rem; 
+          position: relative;
+          padding-left: 10px;      
+          &::before{
+            content: '';
+            position: absolute;
+            left: 0px;
+            width: 4px;
+            background-color: $first-color;
+            height: 80%;
+            top:10%;
+          }     
+        }
+        .about-info{
+          display: inline-block;
+          margin-left: 10px;
+          p{
+            margin: 0px;
+          }      
+        }
+       .v-btn{
+          margin-top: 2.5rem;
+       }
+
     }
 }

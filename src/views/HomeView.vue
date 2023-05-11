@@ -1,4 +1,5 @@
-<!-- <template>
+<template>
+   <div>
     <div class="bg-hero">
         <v-container>
            <v-row cols="6">
@@ -18,18 +19,23 @@
               </v-col>
            </v-row>
         </v-container>
-    </div>
-    
-</template> -->
-
-<template>
-   <options />
+   </div>
+   <!-- options -->
+   <div style="padding: 2rem 10px;">
+    <Options />
+   </div>
+   <!-- about -->
+   <div>
+      <About />
+   </div>
+</div>
 </template>
 <script>
 import Options from '@/components/Options.vue'
-   export default {
-  components: { Options },
-     name: 'Home',
+import About from '@/components/About.vue'
+export default {
+   name: 'Home',
+   components: { Options ,About },
 
     }
 </script>
