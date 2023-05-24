@@ -28,14 +28,37 @@
    <div>
       <About />
    </div>
+   <!-- Menu -->
+      <!-- Head-Adress -->
+      <div>
+         <Head-Adress title="Food Menu" description="Most Popular Items"/>
+      </div>
+      <div>
+         <Menu />
+      </div>
+      <!-- Booking -->
+      <div>
+         <Booking />
+      </div>
+      <!-- Master chefs -->
+      <div>
+         <Head-Adress title="Team Members"  description="Our Master Chefs"/>
+      </div>
+      <div>
+         <Masterchefs />
+      </div>
 </div>
 </template>
 <script>
 import Options from '@/components/Options.vue'
 import About from '@/components/About.vue'
+import HeadAdress from '@/components/HeadAdress.vue'
+import Menu from '@/components/Menu.vue'
+import Booking from '@/components/Booking.vue'
+import Masterchefs from '@/components/Masterchefs.vue'
 export default {
    name: 'Home',
-   components: { Options ,About },
+   components: { Options ,About ,HeadAdress ,Menu , Booking, Masterchefs},
 
     }
 </script>

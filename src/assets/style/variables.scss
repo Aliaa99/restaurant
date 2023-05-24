@@ -9,3 +9,34 @@ $second-color:#fff;
     font-size: 15px !important;        
 
 };
+// head-address
+.head-address{
+    margin: 10px 0px;
+    text-align: center;
+    h5{
+        font-family: 'Pacifico';
+        font-weight: 100;
+        color: $first-color;
+        font-size: 1.5rem;
+        margin: 10px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: $first-color;
+            width: 45px;
+            height: 2px;
+            right: 39%;
+            top: 50%;
+        } 
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: $first-color;
+            width: 45px;
+            height: 2px;
+            left: 39%;
+            top: 50%;
+        }       
+    }
+}

@@ -57,7 +57,7 @@ body{
           
     }
     .v-menu__content{
-      top: 7% !important;
+      // top: 7% !important;
       .v-list-item{
           min-height: 25px;
           .small-list{
@@ -123,6 +123,7 @@ body{
 
     //about us
     .about-text{
+      margin: 20px 0px;
         h5{
           color: $first-color;
           font-family: 'Pacifico'!important;
@@ -176,4 +177,164 @@ body{
        }
 
     }
+    // tabs , menu
+    .v-tabs-slider-wrapper{
+       color: $first-color;
+    }
+    .tabstyle{
+      overflow: hidden;
+      border: 0px;
+      padding: 0px;
+      margin: 0px 15px;
+      width: 25%;
+      &:active{
+        border: 0px;
+      }  
+      .v-icon{
+        color: $first-color;
+        font-size: 37px;
+        width: 100%;
+      }
+      h4{
+        color: black;
+        span{
+          color: #666565;
+          font-size: 10px;
+          display: block;
+          text-align: left;
+          margin-top: 5px;      
+        }
+      }
+    }
+    .tabitem{
+      margin-top: 40px;
+      img{
+        width: 100%;
+      }
+      h2{
+        border-bottom: 1px solid gainsboro;
+        span{
+          float: right;
+          color: $first-color;
+          font-size: 20px;
+      
+        }
+      }
+      p{
+        color: #666565;
+        font-size: 15px;
+      }
+    }
+    .v-slide-group__wrapper{
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      width: 60%;
+      top: 0;
+      bottom: 0;
+  
+    }
+
+  .booking{
+    margin-bottom: 20px;
+    background-color: #0F172B !important;
+    position: relative;
+    // vedio
+    .video{
+      background-image: url("../img/video.jpg");
+      background-size: cover !important;
+      width: 49%;
+      margin: 0px;
+      display: inline-block;  
+      .v-btn{
+        text-align: center;
+        margin: 45%;
+        background-color: $first-color !important;
+        border-radius: 50%;
+        height: 60px !important;
+        width: 50px !important;
+        padding: 5px;
+        box-shadow: 0 0 0 rgba(204,169,44, 0.5);
+        animation: pulse 1.5s infinite;
+        &:hover {
+          animation: none;
+        }
+        @-webkit-keyframes pulse {
+          0% {
+            -webkit-box-shadow: 0 0 0 0 rgba(255, 77, 0, 0.806);
+          }
+          70% {
+              -webkit-box-shadow: 0 0 0 10px rgba(234, 94, 19, 0.5);
+          }
+          100% {
+              -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+          }
+        }
+        @keyframes pulse {
+          0% {
+            -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.8);
+            box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+          }
+          70% {
+              -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0.5);
+              box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+          }
+          100% {
+              -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+              box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+          }
+        }              
+        .v-icon{
+          font-size: 50px;
+        }
+      }
+    }
+    // booking form
+    .booking-form{
+      color: white;
+      padding: 5px 30px;
+      margin: 0px;
+      width: 50%;
+      display: inline-block;  
+      position: absolute;
+      top: 25px;  
+      .v-text-field{
+        input{
+          background-color: white;
+          padding: 10px;
+        }
+        label{
+          color: black;
+          font-size: 15px;
+          padding:  3px 5px;
+          z-index: 2;
+        }
+        .v-input__prepend-outer{
+          background-color: white;
+          margin: 0px;
+          padding: 4px;
+        }
+      }  
+      .v-select{
+        .v-input__append-inner{
+          background-color: white;
+          margin: 0px;
+          padding: 4px;
+  
+        }
+        .v-select__selections{
+          background-color: white;
+          color: black;
+        }
+        .v-select__selection--comma {
+          margin: 7px 4px 7px 10px;
+        }      
+      }    
+      .v-textarea{
+        textarea{
+        background-color: white;
+        }
+      }
+    }
+  }
 }
