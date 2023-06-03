@@ -47,7 +47,18 @@
       <div>
          <Masterchefs />
       </div>
-</div>
+      <!-- clients say -->
+      <div>
+         <Head-Adress title="Testimonial"  description="Our Clients Say!!! "/>
+      </div>
+      <div>
+        <Clients/>               
+      </div>
+      <!-- footer -->
+      <div>
+         <Footer />
+      </div>
+   </div>
 </template>
 <script>
 import Options from '@/components/Options.vue'
@@ -56,10 +67,14 @@ import HeadAdress from '@/components/HeadAdress.vue'
 import Menu from '@/components/Menu.vue'
 import Booking from '@/components/Booking.vue'
 import Masterchefs from '@/components/Masterchefs.vue'
+import Clients from '@/components/Clients.vue'
+import Footer from '@/components/Footer.vue'
 export default {
    name: 'Home',
-   components: { Options ,About ,HeadAdress ,Menu , Booking, Masterchefs},
+   components: { Options ,About ,HeadAdress ,Menu , Booking, Masterchefs,Clients,Footer},
+   data: () => ({
 
+      }),
     }
 </script>
 <style scoped lang="scss">

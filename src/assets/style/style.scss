@@ -349,10 +349,12 @@ body{
           transition: .5s;
         }
       }
+      h3{
+        padding: 5px;
+      }
       .social{
-        display: none;
+        visibility: hidden;
         transition: .5s;
-        animation-delay: .5s;
         .v-btn{
           padding: 0px;
           min-width: 10px;
@@ -367,12 +369,14 @@ body{
             border-top-right-radius: 50%;  
             margin: 0px 2px;    
             }
+            &:hover{
+              box-shadow: 0px 0px;    
+            }
         }
       }
       &:hover{
         .social{
-          display: block;
-          transition: 1s;
+          visibility: visible;
         }
         .v-image{
           border-radius: 50%;
@@ -383,4 +387,117 @@ body{
       }
     }
   }
+   
+  //footer
+  .footer{
+      padding: 60px 20px;
+      background-color: #0F172B !important;
+    .head-title{
+      font-size: 25px;
+      color: $first-color;
+      font-family: "Pacifico";
+    }
+    .v-list{
+      background-color: transparent;
+      padding: 20px 0px;
+      .v-list-item{
+        max-height: 0px;
+        min-height: 25px !important;
+        .v-list-item__icon{
+          margin: 0px;
+          .v-icon{
+            color: white;
+          }
+        }
+        .v-btn{
+          background-color: transparent;
+          color: white;
+          padding: 0px;
+        }
+      }
+      .liststyle{
+        color: white;
+        overflow: visible;
+        text-overflow: initial;
+        white-space: unset;    
+      }
+    }
+    .colorstyle{
+      color: white;
+    }
+    .contact{
+      margin: 15px 0px;
+      padding: 0px;
+  
+    }
+    .v-form{
+      position: relative;
+      .v-input__slot{
+        background-color: white;
+        height: 50px;
+    
+      }
+      .v-label{
+        padding: 0px 10px;
+        font-size: 15px;
+      }
+      .v-btn{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        height: 35px;
+        background-color: $first-color;
+        color: white;
+      }
+    }
+    //social
+    .footer-social{
+      .v-btn{
+        padding: 5px;
+        min-width: 25px;
+        background-color: transparent;
+        font-size: 1rem;
+        color: white;
+        margin: 5px;
+        border: 1px solid white;
+        border-radius: 50%;
+        &:hover{
+          background-color: $first-color;
+        }        
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
