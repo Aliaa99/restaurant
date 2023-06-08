@@ -2,7 +2,7 @@
     <div class="footer">
         <v-container>
             <v-row>
-                <v-col cols="3" >
+                <v-col lg="3" md="4" sm="6" cols="6">
                     <div class="head-title">Company</div>
                     <v-list>
                         <v-list-item-group>
@@ -22,7 +22,7 @@
                         </v-list-item-group>
                       </v-list>                  
                 </v-col>
-                <v-col cols="3" >
+                <v-col lg="3" md="4" sm="6" cols="6">
                     <div class="head-title">contact</div>
                     <v-list>
                         <v-list-item-group>
@@ -61,7 +61,7 @@
                         <v-btn><v-icon>mdi-linkedin</v-icon></v-btn>
                       </div>               
                 </v-col>
-                <v-col cols="3" >
+                <v-col lg="3" md="4" sm="6" cols="6">
                     <div class="head-title">Opening</div>
                     <v-list>
                         <v-list-item-group>
@@ -84,7 +84,7 @@
                         </v-list-item-group>
                       </v-list>   
                 </v-col>
-                <v-col cols="3" >
+                <v-col lg="3" md="4" sm="6" cols="6">
                     <div class="head-title">Newsletter</div>
 
                         <div class="colorstyle m">

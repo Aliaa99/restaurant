@@ -2,7 +2,7 @@
     <div class="about">
         <v-container>
             <v-row>
-                <v-col cols="6 ">
+                <v-col lg="6" sm="12">
                     <v-row>
                         <v-col cols="6">
                         <img src="../assets/img/about-1.jpg" style=" width: 100% " />
@@ -18,7 +18,7 @@
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col>
+                <v-col lg="6" md="6" sm="12">
                     <div class="about-text">
                         <h5> about us</h5>
                         <h1 class="h1-welcome"> welcome to <v-icon>mdi-food</v-icon> restorant</h1>

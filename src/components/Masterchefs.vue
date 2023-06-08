@@ -2,7 +2,7 @@
     <div class="masterchefs">
         <v-container>
             <v-row>
-                <v-col cols="3" v-for="item in items" :key="item.id">
+                <v-col md="3" sm="6" xs="6" v-for="item in items" :key="item.id">
                     <v-card>
                         <div>
                             <v-img :src="require('../assets/img/'+ item.image +'.jpg')" />

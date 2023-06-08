@@ -28,6 +28,10 @@ $second-color:#fff;
             height: 2px;
             right: 39%;
             top: 50%;
+            @media screen and (max-width: 1000px) {
+               background-color: transparent;
+            }
+
         } 
         &::before{
             content: '';
@@ -37,6 +41,9 @@ $second-color:#fff;
             height: 2px;
             left: 39%;
             top: 50%;
+            @media screen and (max-width: 1000px) {
+                background-color: transparent;
+             } 
         }       
     }
 }
@@ -46,3 +53,11 @@ $second-color:#fff;
 .m{
     margin: 15px 0px;
 }
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .max-H{
+        padding: 0 10px;
+        max-height: 50px;
+
+    }
+   } ;
+   

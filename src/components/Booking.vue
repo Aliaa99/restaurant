@@ -24,7 +24,7 @@
                 <v-container>
                 <v-row>
                   <!-- name -->
-                  <v-col sm="6">
+                  <v-col sm="6" class="max-H">
                     <v-text-field
                       v-model="name"
                       :rules="nameRules"
@@ -34,7 +34,7 @@
                     ></v-text-field>
                   </v-col>
                   <!-- email -->
-                  <v-col sm="6">
+                  <v-col sm="6" class="max-H">
                     <v-text-field
                       v-model="email"
                       :rules="emailRules"
@@ -44,7 +44,7 @@
                     ></v-text-field>
                   </v-col>
                   <!-- date -->
-                  <v-col cols="6">
+                  <v-col cols="6" class="max-H">
                     <v-dialog
                       ref="dialog"
                       v-model="modal"
@@ -87,10 +87,10 @@
                   </v-col>
                   <!-- select number of pepole -->
                   <v-col
-                    class="d-flex"
+                    class="d-flex max-H"
                     cols="6"
                   >
-                  <div>
+                  <div style="width:100%">
                     <v-select
                       label="No Pepole"
                       :items="this.y"
@@ -99,7 +99,7 @@
                   </div>
                   </v-col>
                   <!-- Textarea -->                            
-                  <v-col sm="12" cols="12">
+                  <v-col sm="12" cols="12" >
                     <v-textarea label="Label" rows="3"></v-textarea>
                   </v-col>
                   <!-- booking btn -->

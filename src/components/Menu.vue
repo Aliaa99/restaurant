@@ -29,7 +29,7 @@
             >
             <div >
                 <v-row>
-                  <v-col cols="6" v-for="newitem in item.content" :key="newitem.id">
+                  <v-col xs="12" lg="6" md="6" sm="12"  v-for="newitem in item.content" :key="newitem.id">
                     <v-row>
                         <v-col cols="2">
                             <img :src="require('../assets/img/'+ newitem.image +'.jpg')" /> 

@@ -1,7 +1,7 @@
 <template>
     <v-container >
     <v-row >
-      <v-col cols="3"  v-for="item in items" :key="item.id">
+      <v-col lg="3" md="4" sm="6"  xs="12" v-for="item in items" :key="item.id">
             <v-card class="options" >
                 <v-icon class="options-icon">{{ item.icon }}</v-icon>
                 <h3 class="options-h">{{ item.name }}</h3>        
