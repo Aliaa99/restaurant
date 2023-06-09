@@ -1,5 +1,7 @@
 <template>
-    <div class="footer">
+    <div class="footer" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <v-container>
             <v-row>
                 <v-col lg="3" md="4" sm="6" cols="6">
