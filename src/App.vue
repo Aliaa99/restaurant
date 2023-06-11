@@ -23,7 +23,7 @@
             <template v-slot:activator="{ on }" >
                 <v-btn class="nav-btn"
                   v-on="on" 
-                  
+                  :to="item.route"
                 > 
                   {{item.name}}
                   <v-icon>{{item.icon}}</v-icon>
@@ -32,7 +32,7 @@
             <v-list v-for='element in item.value ' :key='element.id' >
               <v-list-item>
                 <v-list-item-title v-if="item.type = Array"> 
-                  <v-btn class="small-list" >{{ element.ex }}</v-btn>
+                  <v-btn class="small-list" :to="element.route">{{ element.ex }}</v-btn>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
@@ -56,15 +56,15 @@ export default {
 
   data: () => ({
     items:[
-    {name:'Home',value:'' ,type:'text',icon:''},
-    {name:'About',value:'',type:'text',icon:''},
-    {name:'service',value:'',type:'text',icon:''},
-    {name:'menu',value:'',type:'text',icon:''},
+    {name:'Home',value:'' ,type:'text',icon:'',route:'/'},
+    {name:'About',value:'',type:'text',icon:'',route:'/about'},
+    {name:'service',value:'',type:'text',icon:'',route:'/services'},
+    {name:'menu',value:'',type:'text',icon:'',route:'/menu'},
     {name:'pages',value:[
-      {ex:'booking'},
-      {ex:'our-team'},
-      {ex:'testimonial'}],type:'Array',icon:'mdi-menu-down'},
-      {name:'contact',value:'',type:'text',icon:''},
+      {ex:'booking' ,route:'Booking'},
+      {ex:'our-team',route:'Team'},
+      {ex:'testimonial',route:'Testimonial'}],type:'Array',icon:'mdi-menu-down'},
+      {name:'contact',value:'',type:'text',icon:'',route:'/contact'},
     ],
 
     view: {

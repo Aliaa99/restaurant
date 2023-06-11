@@ -24,6 +24,7 @@ body{
             .nav-btn{
                 background-color: transparent !important;
                 color: white;
+                box-shadow: 0px 0px;
                 &:active , &:hover{
                   color: $first-color;
                 }
@@ -465,7 +466,39 @@ body{
     .slider-pagination-bullet-active{
       background-color: orange !important;
     }
-
+  //contact us
+  .contact-title{
+    font-size: 20px;
+    color: $first-color;
+    font-family: "Pacifico";
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-color: $first-color;
+      width: 40px;
+      height: 1px;
+      top: 50%;
+      right: 65%;
+      }
+    }
+    .contact-info{
+      margin: 7px 0px;
+      .v-icon{
+        color: $first-color ;
+      }  
+    }
+  .contact-form{
+    .v-text-field__slot{
+      border: 1px solid gray;
+    }
+    .v-label{
+      padding: 5px;
+    }
+    input{
+      min-height: 45px;
+    }
+  }
   //footer
   .footer{
       padding: 60px 20px;
