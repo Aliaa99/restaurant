@@ -21,7 +21,7 @@
         <div   class="nav-list"  v-if="this.X" >
           <v-menu  v-for='item in items' :key='item.id'>
             <template v-slot:activator="{ on }" >
-                <v-btn class="nav-btn"
+                <v-btn class="nav-btn small"
                   v-on="on" 
                   :to="item.route"
                 > 
@@ -39,7 +39,7 @@
           </v-menu>
         </div>
         <div>
-          <v-btn class="general-btn"> book a table </v-btn>
+          <v-btn class="general-btn hidden"> book a table </v-btn>
         </div>
     </v-app-bar>
     <v-main>

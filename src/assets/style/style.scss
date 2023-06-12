@@ -49,9 +49,14 @@ body{
               display: block;
             }
             .nav-btn{
-              display: block;
+              display: inline-flex;
+              margin: auto;
             }
-
+             .hidden{
+              display: none;
+             }
+             .small{
+             }
     
           }
   
